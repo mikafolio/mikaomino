@@ -1,0 +1,374 @@
+@charset "UTF-8";
+body {
+  font-family: 'Sawarabi Mincho', serif;
+  font-family: 'Quicksand', sans-serif;
+}
+
+body img {
+  max-width: 100%;
+  vertical-align: bottom;
+}
+
+body .font-sm, body .profile__link {
+  font-size: 14px;
+}
+
+body .font-md, body .form {
+  font-size: 17px;
+}
+
+body .font-lr, body .sub-title, body .profile__name {
+  font-size: 24px;
+}
+
+body .font-lg, body .main-title, body .footer-text {
+  font-size: 36px;
+}
+
+body .mb-sm, body .portfolio__content {
+  margin-bottom: 40px !important;
+}
+
+body .mt-lg {
+  margin-top: 80px !important;
+}
+
+body .mb-lg, body .top, body .profile, body .portfolio {
+  margin-bottom: 80px !important;
+}
+
+body .pb-sm {
+  padding-bottom: 16px !important;
+}
+
+body .pb-lg {
+  padding-bottom: 80px !important;
+}
+
+body .content-width {
+  width: 90%;
+  margin: 0 auto;
+  max-width: 1070px;
+}
+
+body .main-title {
+  font-weight: 200;
+  margin-bottom: 0;
+  display: block;
+  color: white;
+  margin: 0;
+}
+
+body .flex {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+body .purple {
+  color: #904669;
+}
+
+body .top {
+  position: relative;
+  width: 100%;
+  height: 840px;
+  background-color: #ede0d9;
+}
+
+body .top-title {
+  position: absolute;
+  margin-left: 30px;
+  padding-top: 300px;
+}
+
+body .title {
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin: 0 30px 20px 30px;
+  color: #ede0d9;
+}
+
+body .profile {
+  width: 100%;
+  height: 500px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+body .profile__inner {
+  width: 83%;
+  margin: 0 auto;
+  border-width: 4px;
+  border-style: solid;
+  border-color: #ede0d9;
+  height: 480px;
+  z-index: 0;
+}
+
+body .profile__pic {
+  height: 240px;
+  width: 100%;
+}
+
+body .profile__name {
+  margin: 0 auto;
+  text-align: center;
+  height: 40px;
+  margin-top: 20px;
+  padding-bottom: 10px;
+  width: 100%;
+  color: #b99883;
+}
+
+body .profile__content {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 100%;
+  height: 50px;
+  z-index: 10;
+  border-top: solid;
+  border-color: #ede0d9;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+}
+
+body .profile__link {
+  width: 162px;
+  height: 45px;
+  background-color: #ede0d9;
+  text-align: center;
+  color: #b99883;
+  text-decoration: none;
+  margin-top: 5px;
+  padding-top: 5px;
+}
+
+body .portfolio-title {
+  background-color: #ede0d9;
+  color: white;
+  padding: 20px 30px 0px 30px;
+  margin: 0;
+}
+
+body .portfolio {
+  width: 100%;
+  height: 1500px;
+  background-color: #ede0d9;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+body .portfolio__inner {
+  width: 83%;
+  margin: 0 auto;
+}
+
+body .portfolio__content {
+  width: 100%;
+  height: 450px;
+  background-color: white;
+}
+
+body .skills {
+  width: 100%;
+  height: 1140px;
+}
+
+body .skills__inner {
+  width: 83%;
+  margin: 0 auto;
+}
+
+body .skills__wrapper {
+  width: 100%;
+  height: 85px;
+  margin-bottom: 30px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+}
+
+body .skills__item {
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  margin: 0 0 0 20px;
+}
+
+body .skills__detail {
+  width: 245px;
+  height: 65px;
+  border: solid;
+  border-width: 3px;
+  margin: 0 0 20px 0;
+  border-color: #ede0d9;
+}
+
+body .skill-img {
+  width: 70px;
+  margin-top: 5px;
+}
+
+body .skill-name {
+  margin: 0 0 0 20px;
+}
+
+body .contact-form {
+  width: 100%;
+  height: 150px;
+  background-color: #ede0d9;
+  text-align: center;
+  position: relative;
+}
+
+body .form {
+  position: absolute;
+  width: 190px;
+  height: 40px;
+  border: solid;
+  border-color: white;
+  margin: auto;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  padding-top: 15px;
+  color: white;
+}
+
+body .footer {
+  width: 100%;
+  height: 500px;
+  background-color: #c7a78f;
+  position: relative;
+}
+
+body .footer__title {
+  position: absolute;
+  top: 70px;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  margin: 0 auto;
+}
+
+body .footer-text {
+  margin: 0 auto;
+  text-align: center;
+  color: white;
+}
+
+@media (min-width: 480px) {
+  /******************************************************************
+
+Stylesheet: 480px以上(スマホの横向き)のモニタで適用
+
+******************************************************************/
+}
+
+@media (min-width: 600px) {
+  /******************************************************************
+
+Stylesheet: 600px以上のタブレットやモニタで適用
+
+******************************************************************/
+  .flex {
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+  }
+  .houses__item {
+    -ms-flex-preferred-size: 50%;
+        flex-basis: 50%;
+    margin-bottom: 60px;
+  }
+  .popular__container {
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+  }
+  .popular__item {
+    -ms-flex-preferred-size: 47%;
+        flex-basis: 47%;
+  }
+  .travel__inner {
+    padding: 50px;
+  }
+  .travel__texts, .travel__img {
+    -ms-flex-preferred-size: 47%;
+        flex-basis: 47%;
+  }
+  .travel__texts {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: end;
+        -ms-flex-align: end;
+            align-items: flex-end;
+  }
+  .footer .logo {
+    -webkit-box-pack: start;
+        -ms-flex-pack: start;
+            justify-content: flex-start;
+  }
+  .footer__li {
+    margin-left: 0;
+    margin-right: 30px;
+  }
+}
+
+@media (min-width: 960px) {
+  /******************************************************************
+
+Stylesheet: 960px以上のモニタで適用
+
+******************************************************************/
+  .font-sm, body .profile__link {
+    font-size: 16px;
+  }
+  .font-md, body .form {
+    font-size: 19px;
+  }
+  .font-lr, body .sub-title, body .profile__name {
+    font-size: 40px;
+  }
+  .font-lg, body .main-title, body .footer-text {
+    font-size: 70px;
+  }
+  .mb-lg, body .top, body .profile, body .portfolio {
+    margin-bottom: 140px !important;
+  }
+  .pb-lg {
+    padding-bottom: 140px !important;
+  }
+}
+
+@media (min-width: 1280px) {
+  /******************************************************************
+
+Stylesheet: 1280px以上のモニタで適用
+
+******************************************************************/
+}
+/*# sourceMappingURL=style.css.map */
