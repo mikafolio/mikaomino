@@ -1,0 +1,454 @@
+@charset "UTF-8";
+body {
+  font-family: 'Sawarabi Mincho', serif;
+  font-family: 'Quicksand', sans-serif;
+}
+
+body img {
+  max-width: 100%;
+  vertical-align: bottom;
+}
+
+body .font-sm, body .profile__content > p, body .skills__text, body .form {
+  font-size: 14px;
+}
+
+body .font-md, body .profile__year, body .profile__content {
+  font-size: 17px;
+}
+
+body .font-lr, body .sub-title, body .skill-name, body .footer-text {
+  font-size: 24px;
+}
+
+body .font-lg, body .main-title {
+  font-size: 36px;
+}
+
+body .mb-sm, body .profile .future, body .skills__wrapper {
+  margin-bottom: 40px !important;
+}
+
+body .mb-md {
+  margin-bottom: 60px !important;
+}
+
+body .mb-lg, body .top, body .profile, body .portfolio, body .skills {
+  margin-bottom: 80px !important;
+}
+
+body .mt-sm {
+  margin-top: 40px !important;
+}
+
+body .mt-md, body .skills, body .contact-form {
+  margin-top: 60px !important;
+}
+
+body .mt-lg {
+  margin-top: 80px !important;
+}
+
+body .pb-sm {
+  padding-bottom: 20px !important;
+}
+
+body .pb-md, body .portfolio__inner {
+  padding-bottom: 60px !important;
+}
+
+body .pb-lg {
+  padding-bottom: 80px !important;
+}
+
+body .pt-sm, body .portfolio-title, body .skills__wrapper {
+  padding-top: 20px !important;
+}
+
+body .pt-md {
+  padding-top: 60px !important;
+}
+
+body .pt-lg {
+  padding-top: 80px !important;
+}
+
+body .content-width, body .profile, body .portfolio, body .skills {
+  width: 90%;
+  margin: 0 auto;
+  max-width: 1070px;
+}
+
+body .main-title {
+  font-weight: 200;
+  margin-bottom: 0;
+  display: block;
+  color: white;
+  margin: 0;
+}
+
+body .sub-title {
+  margin-left: 10px;
+}
+
+body .flex, body .skills__inner {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+body .purple {
+  color: #904669;
+}
+
+body .top {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 100vw;
+  height: 100vh;
+  background-color: #ede0d9;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  text-align: center;
+}
+
+body .top-title {
+  width: 70%;
+  margin: 0 auto;
+}
+
+body .icon-container {
+  width: 75px;
+  height: 75%;
+  margin: 40px auto;
+  -webkit-animation-name: kf-arrow-anime;
+          animation-name: kf-arrow-anime;
+  -webkit-animation-duration: 2s;
+          animation-duration: 2s;
+  -webkit-animation-timing-function: linear;
+          animation-timing-function: linear;
+  -webkit-animation-delay: 0s;
+          animation-delay: 0s;
+  -webkit-animation-iteration-count: infinite;
+          animation-iteration-count: infinite;
+  -webkit-animation-direction: normal;
+          animation-direction: normal;
+  -webkit-animation-fill-mode: forwards;
+          animation-fill-mode: forwards;
+}
+
+@-webkit-keyframes kf-arrow-anime {
+  0%,
+  50%,
+  100% {
+    -webkit-transform: translateY(-15px);
+            transform: translateY(-15px);
+  }
+  30% {
+    -webkit-transform: none;
+            transform: none;
+  }
+}
+
+@keyframes kf-arrow-anime {
+  0%,
+  50%,
+  100% {
+    -webkit-transform: translateY(-15px);
+            transform: translateY(-15px);
+  }
+  30% {
+    -webkit-transform: none;
+            transform: none;
+  }
+}
+
+body .profile {
+  display: block;
+  color: #b99883;
+}
+
+body .profile__inner {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  border: solid;
+  border-radius: 3px;
+  border-color: #ede0d9;
+  text-align: center;
+  display: flex;
+}
+
+body .profile__box {
+  margin: auto;
+  padding: 40px 10px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+body .profile__box > p {
+  font-size: 12px;
+}
+
+body .profile__container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  margin-bottom: 30px;
+  max-width: 650px;
+}
+
+body .profile__year {
+  min-width: 60px;
+  text-align: right;
+  margin-right: 5px;
+}
+
+body .profile__line {
+  border-left: solid;
+  border-color: #b99883;
+  border-radius: 1px;
+  width: 3px;
+  margin: 0 10px;
+}
+
+body .profile__content {
+  padding: 10px 10px 0 10px;
+  text-align: left;
+  background-color: #ede0d9;
+}
+
+body .profile .future {
+  max-width: 700px;
+  margin: auto;
+  padding: 0 10px;
+}
+
+body .portfolio {
+  display: block;
+  background-color: #ede0d9;
+  color: white;
+}
+
+body .portfolio__inner {
+  text-align: center;
+}
+
+body .portfolio-title {
+  color: white;
+}
+
+body .skills {
+  display: block;
+}
+
+body .skills__title {
+  color: #b99883;
+}
+
+body .skills__detail {
+  width: 100%;
+  max-width: 950px;
+  margin: 0 auto;
+  text-align: center;
+}
+
+body .skills__wrapper {
+  background-color: #ede0d9;
+}
+
+body .skills__img {
+  width: 30%;
+  height: 35%;
+}
+
+body .skills__item {
+  color: #b99883;
+}
+
+body .skills__text {
+  padding: 0 25px 20px;
+  text-align: left;
+}
+
+body .skills__text > li {
+  list-style: none;
+}
+
+body .skill-name {
+  margin: 0;
+}
+
+body .contact-form {
+  display: block;
+  margin-bottom: 0;
+  padding: 50px 20px;
+  background-color: #ede0d9;
+}
+
+body .form {
+  width: 50%;
+  padding: 10px 10px;
+  max-width: 300px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin: auto;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  border: solid;
+  border-radius: 3px;
+  border-color: white;
+  color: white;
+}
+
+body .footer {
+  display: block;
+  padding: 50px 20px;
+  background-color: #b99883;
+}
+
+body .footer__title {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin: auto;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  color: white;
+}
+
+body .footer-text {
+  text-align: center;
+}
+
+@media (min-width: 480px) {
+  /******************************************************************
+
+Stylesheet: 480px以上(スマホの横向き)のモニタで適用
+
+******************************************************************/
+}
+
+@media (min-width: 600px) {
+  /******************************************************************
+
+Stylesheet: 600px以上のタブレットやモニタで適用
+
+******************************************************************/
+  .flex, body .skills__inner {
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+  }
+  .skills__detail {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+  }
+  .skills__wrapper {
+    max-width: 290px;
+    margin: 0 auto;
+  }
+}
+
+@media (min-width: 960px) {
+  /******************************************************************
+
+Stylesheet: 960px以上のモニタで適用
+
+******************************************************************/
+  .font-sm, body .profile__content > p, body .skills__text, body .form {
+    font-size: 16px;
+  }
+  .font-md, body .profile__year, body .profile__content {
+    font-size: 19px;
+  }
+  .font-lr, body .sub-title, body .skill-name, body .footer-text {
+    font-size: 36px;
+  }
+  .font-lg, body .main-title {
+    font-size: 60px;
+  }
+  .mb-lg, body .top, body .profile, body .portfolio, body .skills {
+    margin-bottom: 140px !important;
+  }
+  .pb-lg {
+    padding-bottom: 140px !important;
+  }
+  .flex, body .skills__inner {
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+  }
+  .skills__detail {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+  }
+  .skills__wrapper {
+    max-width: 280px;
+  }
+}
+
+@media (min-width: 1280px) {
+  /******************************************************************
+
+Stylesheet: 1280px以上のモニタで適用
+
+******************************************************************/
+  .flex, body .skills__inner {
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+  }
+}
+/*# sourceMappingURL=style.css.map */

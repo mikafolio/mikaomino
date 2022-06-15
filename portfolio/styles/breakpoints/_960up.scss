@@ -1,0 +1,42 @@
+/******************************************************************
+
+Stylesheet: 960px以上のモニタで適用
+
+******************************************************************/
+.font-sm {
+  font-size: 16px;
+}
+.font-md {
+  font-size: 19px;
+}
+.font-lr {
+  font-size: 36px;
+}
+.font-lg {
+  font-size: 60px;
+}
+.mb-lg {
+  margin-bottom: 140px !important;
+}
+.pb-lg {
+  padding-bottom: 140px !important;
+}
+
+.flex {
+  flex-direction: row;
+  flex-wrap: wrap;
+}
+
+
+.skills {
+  &__detail {
+      display: flex;
+      flex-direction: row;
+      flex-wrap: wrap;
+      justify-content: space-between;
+  }
+
+  &__wrapper {
+      max-width: 280px;
+  }
+}
