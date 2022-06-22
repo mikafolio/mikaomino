@@ -141,9 +141,9 @@ body {
   box-shadow: 1px 0 25px -3px rgba(0, 0, 0, 0.5);
   display: none;
   animation-name:fadeUpAnime;
-animation-duration:0.5s;
-animation-fill-mode:forwards;
-opacity:0;
+  animation-duration:0.5s;
+  animation-fill-mode:forwards;
+  opacity:0;
 
   @include animation($name: kf-fadeUp-anime, $duration: 2s, $timing-function: linear);
 
@@ -191,8 +191,11 @@ opacity:0;
 
   &:hover {
     background-color: $cSubTitle;
-    color: $cWhite;
     box-shadow: 5px 5px 10px 0 rgba(0, 0, 0, 0.5);
+
+    & > a {
+      color: $cWhite
+    }
   }
 }
 

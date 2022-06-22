@@ -7,13 +7,9 @@
     <title>m_portfolio</title>
     <meta name="description" content="This site is a test site.">
     <link rel="icon" href="images/favicon.png">
-    <!-- <link rel="stylesheet" href="styles/loader.css">
-    <script src="scripts/vendors/pace.js"></script> -->
     <link ref="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@300&family=Sawarabi+Mincho&display=swap" rel="stylesheet">
-    <!-- <link rel="stylesheet" href="stles/vendors/bootstrap-reboot.css" />
-    <link rel="stylesheet" href="styles/vendors/swiper.min.css" /> -->
     <script
       src="https://code.jquery.com/jquery-3.6.0.min.js"
       integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4="
@@ -30,9 +26,10 @@
               <nav class="header__nav">
             <div class="header__inner">
               <ul class="header__ul">
-                <li class="header__li"><a href="">About me</a></li>
-                <li class="header__li"><a href="">Skills</a></li>
-                <li class="header__li"><a href="">Contact</a></li>
+                <li class="header__li"><a href="#aboutme">About me</a></li>
+                <li class="header__li"><a href="#works">works</a></li>
+                <li class="header__li"><a href="#skills">Skills</a></li>
+                <li class="header__li"><a href="#contact">Contact</a></li>
                 <li class="header__li log-btn"><a href="">ログアウト</a></li>
               </ul>
             </nav>
@@ -56,7 +53,7 @@
             </div>
           </div>
         </div>
-        <section class="profile">
+        <section class="profile" id="aboutme">
           <h2 class="profile__title sub-title">About me</h2>
           <div class="profile__inner">
             <div class="profile__box">
@@ -71,7 +68,7 @@
               <div class="profile__container">
                 <div class="profile__year">2013年</div>
                 <div class="profile__line"></div>  
-                  <div class="profile__content">>大学進学
+                  <div class="profile__content">大学進学
                     <p>地方の若者の人口流出、商店街の過疎化、文化の継承、地域の魅力創出を考えるゼミに所属していました。</p>
                     <p>学校以外ではバイトと旅行に時間をかけていました。</p>
                   </div>
@@ -114,7 +111,7 @@
               </div>
             </div>
         </section>
-        <div class="portfolio">
+        <div class="portfolio" id="works">
         <h2 class="portfolio-title sub-title">Works</h2>
           <div class="portfolio__inner">
             <h2>更新中・・・</h2>
@@ -138,7 +135,7 @@
             </div> -->
           </div>
         </div>
-        <div class="skills">
+        <div class="skills" id="skills">
         <h2 class="skills__title sub-title">Skills</h2>
           <div class="skills__inner">
             <div class="skills__detail">
@@ -168,8 +165,17 @@
               <div class="skills__item">
                   <p class="skill-name">JavaScript</p>
                   <ul class="skills__text">
-                    <li>・まだスクラッチから書くことはできませんが、スクロール検知、スマホ用のメニュー作成、画像の自動スライドは作成できます。</li>
-                    <li>※thisを使ったコードの書き方に苦戦しています</li>
+                    <li>・まだスクラッチから書くことはできませんが、スクロール検知、ナビゲーション作成は作成できます</li>
+                    <li>※コードをきれいにまとめて書くこと、thisの理解に苦戦しています</li>
+                  </ul>
+            </div>
+            </div>
+            <div class="skills__wrapper">
+              <img src="imgs/jquery-vertical.svg" alt="" class="skills__img">
+              <div class="skills__item">
+                  <p class="skill-name">jQuery</p>
+                  <ul class="skills__text">
+                    <li>・HTML/CSSの編集、イベントの作成（フェードイン（アウト）/ホバー、クリック等）、要素取得が可能です</li>
                   </ul>
             </div>
             </div>
@@ -178,7 +184,7 @@
               <div class="skills__item">
                  <p class="skill-name">Java</p>
                  <ul class="skills__text">
-                  <li>・基本的なコードの書き方（条件分岐、繰り返し）、オブジェクト指向について学びましたが、実装レベルではありません。</li>
+                  <li>・基本的なコードの書き方（条件分岐、繰り返し）、オブジェクト指向について学びましたが、実装レベルではありません</li>
                  </ul>
             </div>
             </div>
@@ -206,7 +212,6 @@
               <div class="skills__item">
                  <p class="skill-name">GitHub</p>
                  <ul class="skills__text">
-                  <li>URL<link rel=""></li>
                   <li>※実装において共同開発経験はありません</li>
                  </ul>
             </div>
@@ -235,7 +240,7 @@
            </div>
           </div>
         </div>
-        <div class="contact-form">
+        <div class="contact-form" id="contact">
           <p class="form">お問い合わせはこちら
             <link rel="stylesheet" href="">
           </p>
@@ -256,12 +261,6 @@
        </ul> 
       </nav>
 </div>
-    <!-- <script src="scripts/vendors/swiper.min.js"></script>
-    <script src="scripts/vendors/TweenMax.min.js"></script>
-    <script src="scripts/vendors/scroll-polyfill.js"></script>
-    <script src="scripts/libs/scroll.js"></script>
-    <script src="scripts/libs/text-animation.js"></script>
-    <script src="scripts/libs/hero-slider.js"></script> -->
     <script src="scripts/mobile-menu.js"></script>
     <script src="scripts/main.js"></script>
   </body>

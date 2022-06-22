@@ -1,6 +1,5 @@
 @import 'modules/variables';
 @import 'modules/mixin';
-// @import 'modules/button';
 @import 'modules/mobile-menu';
 
 @import "breakpoints/base";
@@ -20,12 +19,3 @@
 @media (min-width: 1280px) {
   @import "breakpoints/1280up";
 }
-
-// @media (min-resolution: 192dpi)
-//       ,(-webkit-min-device-pixel-ratio: 2) {
-//   @import "breakpoints/2x";
-// }
-
-// @media print {
-//   @import "breakpoints/print";
-// }
