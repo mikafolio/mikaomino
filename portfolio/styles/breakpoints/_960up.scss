@@ -27,6 +27,17 @@ Stylesheet: 960px以上のモニタで適用
   flex-wrap: wrap;
 }
 
+.header {
+  &__nav {
+    display: block !important;
+  }
+}
+
+.mobile-menu {
+  &__btn {
+    display: none;
+  }
+}
 
 .skills {
   &__detail {

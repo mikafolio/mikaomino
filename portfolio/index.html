@@ -12,33 +12,40 @@
     <link ref="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@300&family=Sawarabi+Mincho&display=swap" rel="stylesheet">
-    <!-- <link rel="stylesheet" href="styles/vendors/bootstrap-reboot.css" />
+    <!-- <link rel="stylesheet" href="stles/vendors/bootstrap-reboot.css" />
     <link rel="stylesheet" href="styles/vendors/swiper.min.css" /> -->
+    <script
+      src="https://code.jquery.com/jquery-3.6.0.min.js"
+      integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4="
+      crossorigin="anonymous"></script>
     <link rel="stylesheet" href="styles/style.css" />
     <link rel="stylesheet" href="https://icono-49d6.kxcdn.com/icono.min.css">
   </head>
   <body>
-    <div class="total=container">
+    <div id="total-container">
       <div id="container">
-        <!-- <div class="mobile-menu__cover"></div>
+        <div class="mobile-menu__cover"></div>
         <div class="nav-trigger"></div>
-        <header class="header">
-          <div class="header__inner appear up">
+            <header class="header">
+              <nav class="header__nav">
+            <div class="header__inner">
+              <ul class="header__ul">
+                <li class="header__li"><a href="">About me</a></li>
+                <li class="header__li"><a href="">Skills</a></li>
+                <li class="header__li"><a href="">Contact</a></li>
+                <li class="header__li log-btn"><a href="">ログアウト</a></li>
+              </ul>
+            </nav>
+                <button class="mobile-menu__btn">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+               </button>
+               <nav class="top-btn">
+                <a href="">Top</a>
+              </nav>
             </div>
-            <nav class="header__nav">
-               <ul class="header__ul">
-                <li class="header__li item"><a href="#">ログアウト</a></li>
-                <li class="header__li item"><a href="#"></a></li>
-                <li class="header__li item"></li>
-              </ul> 
-             </nav>
-            <button class="mobile-menu__btn">
-              <span></span>
-              <span></span>
-              <span></span>
-            </button>
-          </div>  -->
-        <!-- </header>  -->
+            </header> 
         <div class="top">
           <div class="top-title">
             <div class="top-content">
@@ -69,7 +76,7 @@
                     <p>学校以外ではバイトと旅行に時間をかけていました。</p>
                   </div>
               </div>
-                <div class="profile__container">
+              <div class="profile__container">
                   <div class="profile__year">2017年</div>
                   <div class="profile__line"></div>  
                 <div class="profile__content">大学卒業</div>
@@ -106,9 +113,6 @@
                 </p>
               </div>
             </div>
-            
-            </div>
-          </div>
         </section>
         <div class="portfolio">
         <h2 class="portfolio-title sub-title">Works</h2>
@@ -243,15 +247,22 @@
             <div class="footer__content"></div>
         </footer>
       </div>
-    </div>
-
+      <nav class="mobile-menu">
+        <ul class="mobile-menu__item">
+          <li class="mobile-menu__link"><a href="#">About me</a></li>
+          <li class="mobile-menu__link"><a href="#">Skills</a></li>
+          <li class="mobile-menu__link"><a href="#">Contact</a></li>
+          <li class="mobile-menu__link"><a href="#">ログアウト</a></li>
+       </ul> 
+      </nav>
+</div>
     <!-- <script src="scripts/vendors/swiper.min.js"></script>
     <script src="scripts/vendors/TweenMax.min.js"></script>
     <script src="scripts/vendors/scroll-polyfill.js"></script>
     <script src="scripts/libs/scroll.js"></script>
     <script src="scripts/libs/text-animation.js"></script>
-    <script src="scripts/libs/hero-slider.js"></script>
-    <script src="scripts/libs/mobile-menu.js"></script>
+    <script src="scripts/libs/hero-slider.js"></script> -->
+    <script src="scripts/mobile-menu.js"></script>
     <script src="scripts/main.js"></script>
   </body>
 </html>

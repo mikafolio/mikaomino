@@ -89,10 +89,116 @@ body {
     color: $cWineRed;
   }
 
+  .header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    background-color: transparent;
+    display: flex;
+    align-items: center;
+    z-index: 100;
+    
+    &.triggered {
+      background-color: rgba(255, 255, 255, 0.9);
+      box-shadow: 10px 0 25px -10px rgba(0, 0, 0, 0.5);
+      transition: all 0.5s cubic-bezier(0.49, 0.03, 1, 1);
+    }
+
+    &__nav {
+      display: none;
+    }
+
+    &__ul {
+      display: flex;
+      align-items: center;
+      padding: 0;
+      margin: 0;
+      list-style: none;
+    }
+  
+    &__li {
+      margin-left: 20px;
+  
+      & > a {
+        color: $cSubTitle;
+        @extend .font-md;
+        text-decoration: none !important;
+        text-transform: uppercase;
+      }
+  }
+}
+
+.top-btn {
+  width: 10%;
+  max-width: 90px;
+  height: 10%;
+  bottom: 30px;
+  right: 30px;
+  position: fixed;
+  border-radius: 25px;
+  background-color: rgba(255, 255,255, 0.8);
+  box-shadow: 1px 0 25px -3px rgba(0, 0, 0, 0.5);
+  display: none;
+  animation-name:fadeUpAnime;
+animation-duration:0.5s;
+animation-fill-mode:forwards;
+opacity:0;
+
+  @include animation($name: kf-fadeUp-anime, $duration: 2s, $timing-function: linear);
+
+  & > a {
+  @extend .font-lr;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-decoration: none;
+  color: $cSubTitle;
+
+  }
+}
+
+@keyframes kf-fadeUp-anime {
+  from {
+    opacity: 0;
+	transform: translateY(100px);
+  }
+
+  to {
+    opacity: 1;
+	transform: translateY(0);
+  }
+}
+
+.popup {
+  display: block;
+}
+  
+
+.log-btn{
+  position: relative;
+  display: inline-block;
+  background-color: $cWhite;
+  border: 1px solid $cSubTitle;
+  font-weight: 600;
+  padding: 5px 30px;
+  margin: 10px 20px;
+  cursor: pointer;
+  transition: all 0.3s;
+  color: $cBlack;
+  text-decoration: none !important;
+
+  &:hover {
+    background-color: $cSubTitle;
+    color: $cWhite;
+    box-shadow: 5px 5px 10px 0 rgba(0, 0, 0, 0.5);
+  }
+}
+
   .top {
     @extend .mb-lg;
     display: flex;
-    width: 100vw;
     height: 100vh;
     background-color: $cBackground;
     align-items: center;
