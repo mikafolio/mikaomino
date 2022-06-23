@@ -293,12 +293,16 @@ body {
       }
     }
     
-      .future {
-        max-width: 700px;
-        margin: auto;
-        padding: 0 10px;
-        @extend .mb-sm
+    .story {
+      max-width: 700px;
+      margin: auto;
+      padding: 0 10px;
+      @extend .mb-sm;
+
+      & > p {
+        text-align: left;
       }
+    }
   }
 
 

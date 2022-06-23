@@ -125,7 +125,7 @@ body .font-lr, body .footer-text, body .skill-name, body .top-btn > a, body .sub
 body .font-lg, body .main-title {
   font-size: 36px;
 }
-body .mb-sm, body .skills__wrapper, body .profile .future {
+body .mb-sm, body .skills__wrapper, body .profile .story {
   margin-bottom: 40px !important;
 }
 body .mb-md {
@@ -441,10 +441,13 @@ body .profile__content {
   text-align: left;
   background-color: #ede0d9;
 }
-body .profile .future {
+body .profile .story {
   max-width: 700px;
   margin: auto;
   padding: 0 10px;
+}
+body .profile .story > p {
+  text-align: left;
 }
 body .portfolio {
   display: block;
